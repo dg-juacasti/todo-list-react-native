@@ -1,18 +1,18 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:1:1-28:12
-INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:1:1-28:12
-INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:1:1-28:12
-INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:1:1-28:12
-MERGED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:1:1-28:12
+ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:1:1-28:12
+MERGED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:1:1-28:12
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/b2ec3232205e095c09543a31d56ae642/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/674677064ce29f9763dc420868735b8b/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/df731ac58fe0112a493f9730ba0671c1/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
-MERGED from [:react-native-community_checkbox] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/@react-native-community/checkbox/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-community_datetimepicker] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-safe-area-context] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-screens] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-vector-icons] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_checkbox] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/@react-native-community/checkbox/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_datetimepicker] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-native:0.68.2] /Users/gomezfrank/.gradle/caches/transforms-3/7d9d92dc8ec1ba2e45aff2ecbb549550/transformed/jetified-react-native-0.68.2/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/gomezfrank/.gradle/caches/transforms-3/6ca4772dc16ee0aa26e0cc717aaeee42/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [org.webkit:android-jsc:r250230] /Users/gomezfrank/.gradle/caches/transforms-3/b26b48339e296557281f3d12b79a5a5f/transformed/jetified-android-jsc-r250230/AndroidManifest.xml:2:1-11:12
@@ -67,50 +67,50 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/gomezfrank
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/gomezfrank/.gradle/caches/transforms-3/ce91150bb7fb05f70a42033bb97da78f/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/gomezfrank/.gradle/caches/transforms-3/53007099516bea6db8367ba9bce19768/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/gomezfrank/.gradle/caches/transforms-3/e9cef843a0cf8e792c31e4de39ed04c1/transformed/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml:2:1-13:12
-INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml:2:1-13:12
-INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml:2:1-13:12
 	package
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:2:3-35
-		INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:2:3-35
-		INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:2:3-35
+		INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:2:3-35
+		INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:1:1-28:12
-		INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml:3:5-51
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:1:1-28:12
-		INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:4:5-78
-MERGED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:4:5-78
-MERGED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:4:5-78
+ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:4:5-78
+MERGED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:4:5-78
+MERGED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:4:5-78
 	android:name
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:4:22-75
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:4:22-75
 uses-permission#android.permission.INTERNET
-ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/b2ec3232205e095c09543a31d56ae642/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:15:5-67
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/b2ec3232205e095c09543a31d56ae642/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:15:5-67
 	android:name
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:6:5-76
+ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:6:5-76
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/b2ec3232205e095c09543a31d56ae642/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/b2ec3232205e095c09543a31d56ae642/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
 	android:name
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:6:22-73
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:6:22-73
 application
-ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:8:5-27:19
-MERGED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:8:5-27:19
-MERGED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:8:5-27:19
-MERGED from [:react-native-community_datetimepicker] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-20
-MERGED from [:react-native-community_datetimepicker] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-20
+ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:8:5-27:19
+MERGED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:8:5-27:19
+MERGED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:8:5-27:19
+MERGED from [:react-native-community_datetimepicker] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-20
+MERGED from [:react-native-community_datetimepicker] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.68.2] /Users/gomezfrank/.gradle/caches/transforms-3/7d9d92dc8ec1ba2e45aff2ecbb549550/transformed/jetified-react-native-0.68.2/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.68.2] /Users/gomezfrank/.gradle/caches/transforms-3/7d9d92dc8ec1ba2e45aff2ecbb549550/transformed/jetified-react-native-0.68.2/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.3] /Users/gomezfrank/.gradle/caches/transforms-3/d1cf27a24c7f89c3464d079b8866a14d/transformed/jetified-soloader-0.10.3/AndroidManifest.xml:11:5-20
@@ -124,73 +124,73 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/gome
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] /Users/gomezfrank/.gradle/caches/transforms-3/f382564408e8806e991bcb7c984abfd6/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:10:7-39
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:10:7-39
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:10:7-39
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:10:7-39
 	tools:ignore
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml:10:9-48
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml:10:9-48
 	android:roundIcon
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:12:7-52
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:12:7-52
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:12:7-52
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:12:7-52
 	tools:targetApi
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml:9:9-29
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml:9:9-29
 	android:icon
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:11:7-41
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:11:7-41
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:11:7-41
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:11:7-41
 	android:allowBackup
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:13:7-34
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:13:7-34
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:13:7-34
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:13:7-34
 	android:theme
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:14:7-38
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:14:7-38
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:14:7-38
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:14:7-38
 	android:usesCleartextTraffic
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml:8:9-44
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml:8:9-44
 	android:name
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:9:7-38
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:9:7-38
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:9:7-38
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:9:7-38
 activity#com.reactnativetesting.MainActivity
-ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:15:7-26:18
+ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:15:7-26:18
 	android:label
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:17:9-41
 	android:launchMode
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:19:9-40
 	android:windowSoftInputMode
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:20:9-51
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:20:9-51
 	android:exported
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:21:9-32
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:21:9-32
 	android:configChanges
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:18:9-118
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:18:9-118
 	android:name
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:16:9-37
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:16:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:22:9-25:25
+ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:22:9-25:25
 action#android.intent.action.MAIN
-ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:23:13-65
+ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:23:13-65
 	android:name
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:23:21-62
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:23:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:24:13-73
+ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:24:13-73
 	android:name
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml:24:23-70
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml:24:23-70
 uses-sdk
-INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/b2ec3232205e095c09543a31d56ae642/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/b2ec3232205e095c09543a31d56ae642/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/674677064ce29f9763dc420868735b8b/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/674677064ce29f9763dc420868735b8b/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/df731ac58fe0112a493f9730ba0671c1/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/gomezfrank/.gradle/caches/transforms-3/df731ac58fe0112a493f9730ba0671c1/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
-MERGED from [:react-native-community_checkbox] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/@react-native-community/checkbox/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_checkbox] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/@react-native-community/checkbox/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_datetimepicker] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_datetimepicker] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-vector-icons] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-vector-icons] /Users/gomezfrank/Development/ReactNativeTesting/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_checkbox] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/@react-native-community/checkbox/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_checkbox] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/@react-native-community/checkbox/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_datetimepicker] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_datetimepicker] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/gomezfrank/Desktop/todo-list-react-native/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.68.2] /Users/gomezfrank/.gradle/caches/transforms-3/7d9d92dc8ec1ba2e45aff2ecbb549550/transformed/jetified-react-native-0.68.2/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.68.2] /Users/gomezfrank/.gradle/caches/transforms-3/7d9d92dc8ec1ba2e45aff2ecbb549550/transformed/jetified-react-native-0.68.2/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/gomezfrank/.gradle/caches/transforms-3/6ca4772dc16ee0aa26e0cc717aaeee42/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
@@ -299,17 +299,17 @@ MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/gomezfrank/.gradle/caches/
 MERGED from [com.facebook.fresco:fbcore:2.6.0] /Users/gomezfrank/.gradle/caches/transforms-3/53007099516bea6db8367ba9bce19768/transformed/jetified-fbcore-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/gomezfrank/.gradle/caches/transforms-3/e9cef843a0cf8e792c31e4de39ed04c1/transformed/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/gomezfrank/.gradle/caches/transforms-3/e9cef843a0cf8e792c31e4de39ed04c1/transformed/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml:11:9-111
+ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml:11:9-111
 	android:exported
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml:11:84-108
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml:11:84-108
 	android:name
-		ADDED from /Users/gomezfrank/Development/ReactNativeTesting/android/app/src/debug/AndroidManifest.xml:11:19-83
+		ADDED from /Users/gomezfrank/Desktop/todo-list-react-native/android/app/src/debug/AndroidManifest.xml:11:19-83
