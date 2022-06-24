@@ -7,33 +7,24 @@ import { Input } from "../../atoms/input";
 import { Typography } from "../../atoms/typography";
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { DateSelector } from "./dateSelector";
-import { useTaskCreate } from "../../../hooks/useTaskCreate";
 import {getPickerDateFormat} from '../../../helpers/dateFormat';
 
 
-export function Form({ navigation }) {
-
-  const { taskCreate } = useTaskCreate()
+export function Form() {
 
   const [description, setDescription] = useState('')
   const [showInitDate, setShowInitDate] = useState(false)
   const [date, setDate] = useState(getPickerDateFormat(new Date()));
   
-  const getWSDateFormat = ({nativeEvent}) => {
+  const getDateFormat = ({nativeEvent}) => {
     const { timestamp } = nativeEvent;
     const dateSelect = getPickerDateFormat(timestamp);
     setDate(dateSelect);
     setShowInitDate(false);
   };
 
-  const handleSaveTask = () => {
-    taskCreate({description, finish_at: date});
-    setDescription('')
-    //setDate(new Date())
-  }
-
   return (
-    <View style={{padding: 24}}>
+    <View style={{ padding: 24 }}>
       <Typography
         caption="Todo List"
         color={COLORS.textColor}
@@ -41,14 +32,14 @@ export function Form({ navigation }) {
         fontFamily={fonts.RobotoBold}
         fontSize={24}
       />
-      <View style={{marginTop: 24}}>
+      <View style={{ marginTop: 24 }}>
         <Typography
           caption="Descripción"
           color={COLORS.textColor}
           fontFamily={fonts.RobotoBold}
           fontSize={12}
         />
-        <View style={{marginTop: 12, marginBottom: 24}}>
+        <View style={{ marginTop: 12, marginBottom: 24 }}>
           <Input
             value={description}
             placeholder="Descripción"
@@ -65,7 +56,7 @@ export function Form({ navigation }) {
           fontFamily={fonts.RobotoBold}
           fontSize={12}
         />
-        <View style={{marginTop: 12}}>
+        <View style={{ marginTop: 12 }}>
           <DateSelector date={date} onPress={() => setShowInitDate(true)} />
         </View>
         {showInitDate && (
@@ -74,27 +65,17 @@ export function Form({ navigation }) {
             display="default"
             minimumDate={new Date(1950, 0, 1)}
             maximumDate={new Date(2300, 10, 20)}
-            onChange={select => getWSDateFormat(select)}
+            onChange={(select) => getDateFormat(select)}
           />
         )}
       </View>
       <View
         style={{
-          flexDirection: 'row',
-          justifyContent: 'flex-end',
+          flexDirection: "row",
+          justifyContent: "flex-end",
           marginTop: 16,
-        }}>
-        <View style={{marginRight: 20}}>
-          <CustomButton
-            title="Volver"
-            onPress={() => navigation.goBack()}
-            disabled={false}
-            height={40}
-            width={80}
-            colorText={COLORS.black}
-            backgroundColor={COLORS.grayLight}
-          />
-        </View>
+        }}
+      >
         <CustomButton
           title="Agregar"
           onPress={() => {}}
