@@ -1,0 +1,89 @@
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# pods
+ios/Pods
+# ios/Podfile.lock
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+# Bundle artifact
+*.jsbundle
+sourcemap.js
+
+# ENV
+#.env
+#.env.prod
+#.env.local
+
+# coverage
+coverage
+#package-lock.json
+#yarn.lock
+
+# devops
+devops/
+.vscode/
+ios/codesigndoc_exports/
+.scannerwork/
+reports/
+#Facebook SDK
+FacebookSDK/
+/captures/
+android/app/release
+android/keystore.properties
+pichincha-yellowpepper.jks
+# Ios and Android Resources
+#ios/assets/src/res/*
+#android/drawable*
+#android/raw/*
