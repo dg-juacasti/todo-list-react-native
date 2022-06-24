@@ -32,6 +32,17 @@ export const saveNewTask = async (task, callback) => {
   });
 }
 
+export const updateTask = async (task, callback) => {
+  await axios.post(`${BASE_URL}${task.id}`, task)
+    .then(res => {
+      const { data } = res.data
+      console.log('response', data);
+      if (callback) {
+        callback();
+      }
+  });
+}
+
 export const deleteTask = async (taskId, callback) => {
   await axios.delete(`${BASE_URL}${taskId}`)
     .then(res => {

@@ -6,6 +6,7 @@ import { Typography } from "../typography";
 import { StyledButton } from "./index.styles";
 
 export function CustomButton({
+  testID,
   title,
   colorText,
   onPress,
@@ -20,6 +21,7 @@ export function CustomButton({
 }) {
   return (
     <StyledButton
+      testID={testID}
       onPress={onPress}
       disabled={disabled}
       backgroundColor={backgroundColor}

@@ -8,14 +8,15 @@ import { Typography } from "../../atoms/typography";
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { DateSelector } from "./dateSelector";
 import {getPickerDateFormat, getDateInIsoFormat} from '../../../helpers/dateFormat';
-import {saveNewTask} from '../../../hooks/useTasksList';
+import { saveNewTask, updateTask } from '../../../hooks/useTasksList';
 
 
-export function Form({ navigation }) {
+export function Form({ navigation, route }) {
+  const { params: { task = {} } = {} } = route;
 
-  const [description, setDescription] = useState('')
+  const [description, setDescription] = useState(task ? task.description : '')
   const [showInitDate, setShowInitDate] = useState(false)
-  const [date, setDate] = useState(getPickerDateFormat(new Date()));
+  const [date, setDate] = useState(task ? getPickerDateFormat(task.finish_at) : getPickerDateFormat(new Date()));
   
   const getDateFormat = ({nativeEvent}) => {
     const { timestamp } = nativeEvent;
@@ -31,6 +32,16 @@ export function Form({ navigation }) {
       finish_at: getDateInIsoFormat(date),
     };
     saveNewTask(task, navigateGoToBack());
+  }
+
+  const update = () => {
+    const newData = {
+      id: task.id,
+      description,
+      status: 1,
+      finish_at: getDateInIsoFormat(date),
+    };
+    updateTask(newData, navigateGoToBack());
   }
 
   const navigateGoToBack = () => {
@@ -92,6 +103,7 @@ export function Form({ navigation }) {
         }}
       >
         <CustomButton
+          testID="goBackId"
           title="Volver"
           onPress={() => navigateGoToBack()}
           disabled={false}
@@ -101,8 +113,9 @@ export function Form({ navigation }) {
           styles={{ marginRight: 16 }}
         />
         <CustomButton
-          title="Agregar"
-          onPress={() => saveTask()}
+          testID="addId"
+          title={task ? "Actualizar" : "Agregar"}
+          onPress={() => task ? update() : saveTask()}
           disabled={false}
           height={40}
           width={80}

@@ -42,7 +42,7 @@ export function TaskItem({task, navigation, onRefresh}) {
         </StyledItemTask>
         <StyledButtonsContent>
           <CustomButton
-            onPress={() => navigation.navigate('Form')}
+            onPress={() => navigation.navigate('Form', { task })}
             disabled={false}
             height={40}
             width={40}
