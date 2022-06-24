@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import {StyledMain, StyledSearchContent, StyledContent} from './index.styles';
 import {Typography} from '../../atoms/typography';
 import {CustomButton} from '../../atoms/button';
@@ -10,8 +10,9 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { View } from "react-native";
 
 export function Main({ navigation }) {
+
   const {tasks, getTasks} = useTasksList();
-  const [saveTasks, setSaveTasks] = useState([])
+  const [saveTasks, setSaveTasks] = useState([]);
 
   useEffect(() => {
     getTasks();
@@ -20,15 +21,6 @@ export function Main({ navigation }) {
   useEffect(() => {
     setSaveTasks(tasks);
   }, [tasks]);
-
-  const mounted = useRef();
-  useEffect(() => {
-    if (!mounted.current) {
-      mounted.current = true;
-    } else {
-      getTasks();
-    }
-  });
   
   return (
     <StyledMain>
