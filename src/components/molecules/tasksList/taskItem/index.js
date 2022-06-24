@@ -10,9 +10,14 @@ import {
 } from './taskItem.styles';
 import { COLORS } from "../../../../shared/colors";
 import fonts from "../../../../shared/fonts";
+import { deleteTask } from '../../../../hooks/useTasksList';
 
 
-export function TaskItem({task, navigation}) {
+export function TaskItem({task, navigation, onRefresh}) {
+  const deleteItem = () => {
+    deleteTask(task.id, onRefresh())
+  }
+
   return (
     <StyledItemContent>
       <CheckBox
@@ -45,7 +50,7 @@ export function TaskItem({task, navigation}) {
             iconColor={COLORS.textColor1}
           />
           <CustomButton
-            onPress={() => {}}
+            onPress={() => deleteItem()}
             disabled={false}
             height={40}
             width={40}

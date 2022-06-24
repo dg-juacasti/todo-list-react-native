@@ -28,6 +28,10 @@ export function Main({ navigation }) {
     });
   }, []);
   
+  const onRefresh = () => {
+    getTasks();
+  }
+
   return (
     <StyledMain>
       <StyledContent>
@@ -64,6 +68,7 @@ export function Main({ navigation }) {
       <TasksList 
         tasks={saveTasks}
         descriptionToSearch={descriptionToSearch}
+        onRefresh={onRefresh}
         navigation={navigation} />
     </StyledMain>
   );
