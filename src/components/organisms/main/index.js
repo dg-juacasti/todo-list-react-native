@@ -6,11 +6,13 @@ import {TasksList} from '../../molecules/tasksList';
 import { COLORS } from "../../../shared/colors";
 import fonts from "../../../shared/fonts";
 import {useTasksList} from '../../../hooks/useTasksList';
+import { Input } from "../../atoms/input";
 
 
 export function Main({ navigation }) {
   const {tasks, getTasks} = useTasksList();
-  const [saveTasks, setSaveTasks] = useState([])
+  const [saveTasks, setSaveTasks] = useState([]);
+  const [descriptionToSearch, setDescriptionToSearch] = useState('');
 
   useEffect(() => {
     getTasks();
@@ -32,6 +34,17 @@ export function Main({ navigation }) {
         />
       </StyledContent>
       <StyledSearchContent>
+        <Input
+          testID="searchId"
+          value={descriptionToSearch}
+          placeholder="Buscar tarea"
+          onChangeText={(value) => setDescriptionToSearch(value)}
+          borderColor={COLORS.textColor1}
+          borderWidth={1}
+          borderRadius={5}
+          height={40}
+          width={280}
+        />
         <CustomButton
           onPress={() => navigation.navigate('Form')}
           disabled={false}
@@ -44,6 +57,7 @@ export function Main({ navigation }) {
       </StyledSearchContent>
       <TasksList 
         tasks={saveTasks}
+        descriptionToSearch={descriptionToSearch}
         navigation={navigation} />
     </StyledMain>
   );

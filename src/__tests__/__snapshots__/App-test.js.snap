@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList App tests Should render a list with several todos 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "paddingTop": 24,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "marginTop": 24,
+        },
+      ]
+    }
+  >
+    <Text
+      color="#1E6395"
+      fontFamily="Roboto-Bold"
+      fontSize={24}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "color": "#1E6395",
+            "fontFamily": "Roboto-Bold",
+            "fontSize": 24,
+            "fontWeight": "normal",
+            "justifyContent": "center",
+            "textAlign": "center",
+          },
+        ]
+      }
+      textAlign="center"
+    >
+      Todo List
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 16,
+          "marginTop": 24,
+        },
+      ]
+    }
+  >
+    <TextInput
+      borderColor="#85A2C2"
+      borderRadius={5}
+      borderWidth={1}
+      height={40}
+      onChangeText={[Function]}
+      placeholder="Buscar tarea"
+      testID="searchId"
+      value=""
+      width={280}
+    />
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#1E6395",
+          "borderRadius": 3,
+          "flexDirection": "row",
+          "height": 40,
+          "justifyContent": "center",
+          "opacity": 1,
+          "width": 40,
+        }
+      }
+    >
+      <Text
+        color="#ffffff"
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "color": "#ffffff",
+              "fontFamily": "Roboto-Regular",
+              "fontSize": 16,
+              "fontWeight": "normal",
+              "justifyContent": "center",
+              "textAlign": "left",
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Object {
+            "marginLeft": undefined,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontSize": 25,
+              },
+              undefined,
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View />
+</View>
+`;

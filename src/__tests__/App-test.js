@@ -1,8 +1,21 @@
-import { render, screen, act } from "@testing-library/react-native";
+import React from "react";
+import { render, fireEvent, screen, act } from "@testing-library/react-native";
 import axios from "axios";
+import { Main } from '../components/organisms/main';
 
 describe("TodoList App tests", () => {
   it("Should render a list with several todos", async () => {
+    const component = render(<Main />);
+    expect(component).toMatchSnapshot();
+  });
+
+  it("Should call search input", async () => {
+    const descriptionToSearch = 'Otra tarea';
+
+    const { getByTestId } = render(<Main />);
+    const input = getByTestId('searchId');
+    fireEvent.changeText(input, descriptionToSearch);
+    expect(input.props.value).toBe(descriptionToSearch);
   });
 
   it("Should create a new todo", async () => {});

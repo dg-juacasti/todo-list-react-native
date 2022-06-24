@@ -1,12 +1,14 @@
 import React from "react";
-import { View } from 'react-native'
+import { View } from 'react-native';
 import { TaskItem } from "./taskItem";
 
-export function TasksList({tasks, navigation}) {
+export function TasksList({tasks, descriptionToSearch, navigation}) {
+  const tasksFiltered = descriptionToSearch ? tasks.filter(task => task.description.toLowerCase().includes(descriptionToSearch.toLowerCase())) : tasks;
+
   return (
     <View>
-      {tasks &&
-        tasks.map(task => (
+      {tasksFiltered &&
+        tasksFiltered.map(task => (
           <TaskItem
             key={task.id}
             task={task}

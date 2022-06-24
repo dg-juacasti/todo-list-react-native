@@ -2,6 +2,8 @@ import React from "react";
 import { TextInput } from "react-native";
 
 export function Input({
+  testID,
+  value,
   placeholder,
   onChangeText,
   borderColor,
@@ -12,6 +14,8 @@ export function Input({
 }) {
   return (
     <TextInput
+      testID={testID}
+      value={value}
       placeholder={placeholder}
       onChangeText={onChangeText}
       borderColor={borderColor}
