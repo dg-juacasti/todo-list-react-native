@@ -38,6 +38,7 @@
   },
   "jest": {
     "preset": "react-native",
+    "testEnvironment": "jsdom",
     "setupFilesAfterEnv": [
       "@testing-library/jest-native/extend-expect"
     ],
@@ -46,6 +47,9 @@
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-|@)?([a-zA-Z]+/)?(((rn|react-(native|universal|navigation))(-(.*))?)|native-base))"
+    ],
+    "setupFiles": [
+      "<rootDir>/__mocks__/index.js"
     ]
   }
 }
