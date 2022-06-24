@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { View } from 'react-native'
 import { COLORS } from "../../../shared/colors";
 import fonts from "../../../shared/fonts";
@@ -11,13 +11,22 @@ import {getPickerDateFormat} from '../../../helpers/dateFormat';
 import { useTaskCreate } from '../../../hooks/useTaskCreate';
 
 
-export function Form({ navigation }) {
+export function Form({ route, navigation }) {
+
+  const params = route.params;
 
   const {createTask} = useTaskCreate();
   const [description, setDescription] = useState('')
   const [showValidation, setShowValidation] = useState(false)
   const [showInitDate, setShowInitDate] = useState(false)
   const [date, setDate] = useState(getPickerDateFormat(new Date()));
+
+  useEffect(() => {
+    if(params){
+      setDescription(params.description);
+      setDate(params.finish_at);
+    }
+  }, [params]);
   
   const getDateFormat = ({nativeEvent}) => {
     const { timestamp } = nativeEvent;
