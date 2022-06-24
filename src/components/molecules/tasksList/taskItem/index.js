@@ -10,15 +10,16 @@ import {
 } from './taskItem.styles';
 import { COLORS } from "../../../../shared/colors";
 import fonts from "../../../../shared/fonts";
+import { TASK_PENDING } from "../../../../helpers/constants";
 
 
-export function TaskItem({task, navigation, deleteTask}) {
+export function TaskItem({task, navigation, changeStatus, deleteTask}) {
   return (
     <StyledItemContent>
       <CheckBox
-        value={task.status === 0 ? false : true}
+        value={task.status === TASK_PENDING ? false : true}
         disabled={false}
-        onValueChange={() => {}}
+        onValueChange={() => { changeStatus(task);}}
       />
       <StyledItemInformation>
         <StyledItemTask>

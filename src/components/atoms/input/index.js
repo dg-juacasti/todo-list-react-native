@@ -10,6 +10,7 @@ export function Input({
   height,
   width,
   style,
+  ...props
 }) {
   return (
     <TextInput
@@ -21,6 +22,7 @@ export function Input({
       height={height}
       width={width}
       style={{...style}}
+      {...props}
     />
   );
 }

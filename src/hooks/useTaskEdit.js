@@ -3,12 +3,11 @@ import { BASE_URL, AUTHOR_ID } from '../helpers/constants'
 
 export const useTasksEdit = () => {
 
-  const editTask = (task) => {
-    task['description'] = description;
-    task['finish_at'] = finish_at;
-
+  const editTask = (task) => { 
+    task['id_author'] = AUTHOR_ID;
+    console.log(task);
     try{
-      axios.put(`${BASE_URL}${id}`, task)
+      axios.put(`${BASE_URL}${task.id}`, task)
       .then(res => {
         console.log('Edit task response', res);
       })

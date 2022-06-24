@@ -3,6 +3,8 @@ import styled from 'styled-components/native';
 
 export const StyledMain = styled.View`
   padding: 24px;
+  flex: 1;
+  display: flex;
 `;
 
 export const StyledContent = styled.View`

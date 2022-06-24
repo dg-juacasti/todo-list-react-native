@@ -55,6 +55,7 @@ export function Form({ navigation }) {
             borderWidth={1}
             borderRadius={5}
             height={40}
+            testID="inputTaskDescription"
           />
         </View>
         <Typography
@@ -90,6 +91,7 @@ export function Form({ navigation }) {
           height={40}
           width={80}
           backgroundColor={COLORS.textColor}
+          testID="saveTaskButton"
         />
       </View>
     </View>
