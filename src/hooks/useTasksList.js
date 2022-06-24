@@ -12,9 +12,9 @@ export const useTasksList = () => {
           id: task.id,
           status: task.status,
           description: task.description,
-          finish_at: new Date(task.finish_at).toISOString().slice(0, 10),
+          finish_at: new Date(task.created_at).toISOString().slice(0, 10),
       })));
     })
   }
-  return { tasks, getTasks}
+  return { tasks, getTasks }
 }

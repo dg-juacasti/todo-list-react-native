@@ -8,11 +8,14 @@ import { Typography } from "../../atoms/typography";
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { DateSelector } from "./dateSelector";
 import {getPickerDateFormat} from '../../../helpers/dateFormat';
+import { useTaskCreate } from '../../../hooks/useTaskCreate';
 
 
-export function Form() {
+export function Form({ navigation }) {
 
+  const {createTask} = useTaskCreate();
   const [description, setDescription] = useState('')
+  const [showValidation, setShowValidation] = useState(false)
   const [showInitDate, setShowInitDate] = useState(false)
   const [date, setDate] = useState(getPickerDateFormat(new Date()));
   
@@ -21,6 +24,20 @@ export function Form() {
     const dateSelect = getPickerDateFormat(timestamp);
     setDate(dateSelect);
     setShowInitDate(false);
+  };
+
+  const handleSetDescription = (value) => {
+    setDescription(value);
+    setShowValidation(false)
+  };
+
+  const handleCreateTask = () => {
+    if (description === '') {
+      setShowValidation(true);
+    } else {
+      createTask( {description, finish_at: date } );
+      navigation.navigate('Main')
+    }
   };
 
   return (
@@ -43,12 +60,20 @@ export function Form() {
           <Input
             value={description}
             placeholder="Descripción"
-            onChangeText={(value) => setDescription(value)}
+            onChangeText={(value) => handleSetDescription(value)}
             borderColor={COLORS.textColor1}
             borderWidth={1}
             borderRadius={5}
             height={40}
           />
+          { (showValidation && description === '') && (
+            <Typography
+              caption="Descripción es requerida"
+              color={COLORS.error}
+              fontFamily={fonts.RobotoBold}
+              fontSize={12}
+            />
+          )}
         </View>
         <Typography
           caption="Fecha límite"
@@ -78,7 +103,7 @@ export function Form() {
       >
         <CustomButton
           title="Agregar"
-          onPress={() => {}}
+          onPress={() => handleCreateTask()}
           disabled={false}
           height={40}
           width={80}
