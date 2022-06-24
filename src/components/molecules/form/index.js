@@ -7,21 +7,28 @@ import { Input } from "../../atoms/input";
 import { Typography } from "../../atoms/typography";
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { DateSelector } from "./dateSelector";
-import {getPickerDateFormat} from '../../../helpers/dateFormat';
+import { getPickerDateFormat } from '../../../helpers/dateFormat';
+import { useTasksCreate } from '../../../hooks/useTaskCreate';
+import moment from "moment";
 
-
-export function Form() {
+export function Form({ navigation }) {
 
   const [description, setDescription] = useState('')
   const [showInitDate, setShowInitDate] = useState(false)
   const [date, setDate] = useState(getPickerDateFormat(new Date()));
-  
-  const getDateFormat = ({nativeEvent}) => {
+  const { task, createTask } = useTasksCreate();
+
+  const getDateFormat = ({ nativeEvent }) => { 
     const { timestamp } = nativeEvent;
     const dateSelect = getPickerDateFormat(timestamp);
-    setDate(dateSelect);
+    setDate(dateSelect); 
     setShowInitDate(false);
   };
+
+  const create = () => { 
+    createTask(description, moment(date, "DD/MM/YYYY").toISOString());
+    navigation.replace('Main')
+  }
 
   return (
     <View style={{ padding: 24 }}>
@@ -78,7 +85,7 @@ export function Form() {
       >
         <CustomButton
           title="Agregar"
-          onPress={() => {}}
+          onPress={() => create()}
           disabled={false}
           height={40}
           width={80}

@@ -9,6 +9,7 @@ export function Input({
   borderRadius,
   height,
   width,
+  style,
 }) {
   return (
     <TextInput
@@ -19,6 +20,7 @@ export function Input({
       borderRadius={borderRadius}
       height={height}
       width={width}
+      style={{...style}}
     />
   );
 }
