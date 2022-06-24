@@ -1,5 +1,12 @@
 import moment from "moment";
 
-const getPickerDateFormat = date => moment(date).format('DD/MM/YYYY');
+const dateFormatShow = 'DD/MM/YYYY';
 
-export { getPickerDateFormat }
+const getPickerDateFormat = date => moment(date).format(dateFormatShow);
+
+const getDateInIsoFormat = date => {
+  const dateTmp = moment(date, dateFormatShow);
+  return dateTmp.format();
+}
+
+export { getPickerDateFormat, getDateInIsoFormat }

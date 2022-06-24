@@ -18,3 +18,16 @@ export const useTasksList = () => {
   }
   return { tasks, getTasks}
 }
+
+export const saveNewTask = async (task, callback) => {
+  const newTask = {...task, id_author: AUTHOR_ID};
+
+  await axios.post(`${BASE_URL}?id_author=${AUTHOR_ID}`, newTask)
+    .then(res => {
+      const { data } = res.data
+      console.log('response', data);
+      if (callback) {
+        callback();
+      }
+  });
+}

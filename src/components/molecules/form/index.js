@@ -7,10 +7,11 @@ import { Input } from "../../atoms/input";
 import { Typography } from "../../atoms/typography";
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { DateSelector } from "./dateSelector";
-import {getPickerDateFormat} from '../../../helpers/dateFormat';
+import {getPickerDateFormat, getDateInIsoFormat} from '../../../helpers/dateFormat';
+import {saveNewTask} from '../../../hooks/useTasksList';
 
 
-export function Form() {
+export function Form({ navigation }) {
 
   const [description, setDescription] = useState('')
   const [showInitDate, setShowInitDate] = useState(false)
@@ -22,6 +23,20 @@ export function Form() {
     setDate(dateSelect);
     setShowInitDate(false);
   };
+
+  const saveTask = () => {
+    const task = {
+      description,
+      status: 0,
+      finish_at: getDateInIsoFormat(date),
+    };
+    saveNewTask(task, navigateGoToBack());
+  }
+
+  const navigateGoToBack = () => {
+    const { goBack } = navigation;
+    goBack();
+  }
 
   return (
     <View style={{ padding: 24 }}>
@@ -77,8 +92,17 @@ export function Form() {
         }}
       >
         <CustomButton
+          title="Volver"
+          onPress={() => navigateGoToBack()}
+          disabled={false}
+          height={40}
+          width={80}
+          backgroundColor={COLORS.grayLight}
+          styles={{ marginRight: 16 }}
+        />
+        <CustomButton
           title="Agregar"
-          onPress={() => {}}
+          onPress={() => saveTask()}
           disabled={false}
           height={40}
           width={80}

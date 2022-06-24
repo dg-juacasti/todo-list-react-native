@@ -16,6 +16,7 @@ export function CustomButton({
   iconName,
   iconMargin,
   iconColor,
+  styles,
 }) {
   return (
     <StyledButton
@@ -23,7 +24,7 @@ export function CustomButton({
       disabled={disabled}
       backgroundColor={backgroundColor}
       height={height}
-      style={{width: width}}>
+      style={{width: width, ...styles }}>
       <Typography
         caption={title}
         color={colorText ? colorText : COLORS.white}

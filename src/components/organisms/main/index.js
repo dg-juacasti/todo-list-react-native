@@ -21,6 +21,12 @@ export function Main({ navigation }) {
   useEffect(() => {
     setSaveTasks(tasks);
   }, [tasks]);
+
+  useEffect(() => {
+    navigation.addListener('focus', () => {
+      getTasks();
+    });
+  }, []);
   
   return (
     <StyledMain>
