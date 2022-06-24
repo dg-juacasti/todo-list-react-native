@@ -2,7 +2,7 @@ import React from "react";
 import { View } from 'react-native'
 import { TaskItem } from "./taskItem";
 
-export function TasksList({tasks, deleteTask, navigation}) {
+export function TasksList({tasks, navigation}) {
   return (
     <View>
       {tasks &&
@@ -10,7 +10,6 @@ export function TasksList({tasks, deleteTask, navigation}) {
           <TaskItem
             key={task.id}
             task={task}
-            deleteTask={deleteTask}
             navigation={navigation}
           />
         ))}
