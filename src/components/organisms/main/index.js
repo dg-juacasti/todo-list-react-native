@@ -8,11 +8,14 @@ import fonts from "../../../shared/fonts";
 import {useTasksList} from '../../../hooks/useTasksList';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { View } from "react-native";
+import { useIsFocused } from "@react-navigation/native";
 
 export function Main({ navigation }) {
 
   const {tasks, getTasks} = useTasksList();
   const [saveTasks, setSaveTasks] = useState([]);
+  const [reload, setReload] = useState(false);
+  const isFocused = useIsFocused();
 
   useEffect(() => {
     getTasks();
@@ -21,6 +24,19 @@ export function Main({ navigation }) {
   useEffect(() => {
     setSaveTasks(tasks);
   }, [tasks]);
+
+  useEffect(() => {
+    if(isFocused){ 
+      getTasks();
+    }
+  }, [isFocused]);
+
+  useEffect(() => {
+    if(reload){ 
+      getTasks();
+      setReload(false);
+    }
+  }, [reload]);
   
   return (
     <StyledMain>
@@ -60,7 +76,9 @@ export function Main({ navigation }) {
       ) : (
         <TasksList
         tasks={saveTasks}
-        navigation={navigation} />
+        setReload={setReload}
+        navigation={navigation}
+        testID="tasks" />
       )}
     </StyledMain>
   );

@@ -13,9 +13,15 @@ import fonts from "../../../../shared/fonts";
 import { useTaskDelete } from '../../../../hooks/useTaskDelete';
 
 
-export function TaskItem({task, navigation}) {
+export function TaskItem({task, navigation, setReload}) {
 
   const {deleteTask} = useTaskDelete();
+
+  const handleDeleteItem = (id) => {
+    deleteTask(id);
+    setReload(true)
+  };
+
 
   return (
     <StyledItemContent>
@@ -49,7 +55,7 @@ export function TaskItem({task, navigation}) {
             iconColor={COLORS.textColor1}
           />
           <CustomButton
-            onPress={() => deleteTask(task.id)}
+            onPress={() => handleDeleteItem(task.id)}
             disabled={false}
             height={40}
             width={40}

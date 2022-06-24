@@ -2,7 +2,7 @@ import React from "react";
 import { View } from 'react-native'
 import { TaskItem } from "./taskItem";
 
-export function TasksList({tasks, navigation}) {
+export function TasksList({tasks, setReload, navigation}) {
   return (
     <View>
       {tasks &&
@@ -11,6 +11,7 @@ export function TasksList({tasks, navigation}) {
             key={task.id}
             task={task}
             navigation={navigation}
+            setReload={setReload}
           />
         ))}
     </View>

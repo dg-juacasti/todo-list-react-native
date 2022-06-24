@@ -5,7 +5,6 @@ import { BASE_URL, AUTHOR_ID } from '../helpers/constants'
 export const useTasksList = () => {
   const [tasks, setTasks] = useState([])
   const getTasks = () => {
-    console.log("error")
     axios.get(`${BASE_URL}?id_author=${AUTHOR_ID}`)
       .then(res => {
         const { data } = res.data
