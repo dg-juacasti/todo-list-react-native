@@ -87,3 +87,6 @@ pichincha-yellowpepper.jks
 #ios/assets/src/res/*
 #android/drawable*
 #android/raw/*
+
+android/app/build
+android/.gradle
